@@ -1,0 +1,78 @@
+body{
+    margin:0;
+}
+
+header{
+    background-color: navy;
+    border-bottom: 3px solid orange;
+    padding: 10px;
+    color: cyan;
+}
+
+form{
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid navy;
+    width: 35vw;
+    box-shadow: 0px 2px 7px orange;
+}
+
+#contact-list > table{
+    margin-top: 50px;
+    border-radius: 5px;
+    border: 1px solid navy;
+    box-shadow: 0px 2px 7px orange;
+}
+
+ form > div, .row > div{
+    margin: 1px auto;
+    padding: 5px;
+}
+
+#validationSummary{
+    margin-top: 1px;    
+    padding: 1px;
+    color:red;
+}
+
+li{
+    list-style-type: none;
+    margin: 10px;
+}
+
+input,textarea{
+    border:none !important;
+    border-bottom: 1px solid gray!important;
+    display: inline !important;
+    width: 95% !important;
+}
+
+button{
+    border-radius:50%;
+}
+
+textarea{
+    margin-top:15px;
+}
+
+#subscriptionDetailsBlock{
+    display: none;
+}
+
+input[type='submit']{
+    width: 100px !important;
+    background-color: navy;
+    border-radius: 4px;
+    border: 1px solid orange;
+    color: cyan;
+    padding: 5px;
+}
+
+small{
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+    color:red;
+}

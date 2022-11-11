@@ -1,0 +1,79 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "firstname": "Rohit ",
+      "lastname": "Dhar",
+      "email": "abhilashsaha1@gmail.com",
+      "homeNo": "8373861031",
+      "workNo": "7318656296",
+      "birthdate": "1999-03-01",
+      "company": "TCS",
+      "jobTitle": "Programmer Analyst",
+      "notes": "hey",
+      "id": 5
+    },
+    {
+      "firstname": "Santanu ",
+      "lastname": "Ghosh",
+      "email": "santa123@gmail.com",
+      "homeNo": "8373861031",
+      "workNo": "7318656296",
+      "birthdate": "1999-05-16",
+      "company": "Cognizant",
+      "jobTitle": "Programmer Analyst",
+      "notes": "hello",
+      "id": 6
+    },
+    {
+      "firstname": "Jayashree ",
+      "lastname": "Deb",
+      "email": "jdk123@gmail.com",
+      "homeNo": "7318656296",
+      "workNo": "8373861031",
+      "birthdate": "1999-04-10",
+      "company": "Sleeping",
+      "jobTitle": "Enjoying",
+      "notes": "bye",
+      "id": 7
+    },
+    {
+      "firstname": "Yuvraj",
+      "lastname": "Manu",
+      "email": "yuvi123@gmail.com",
+      "homeNo": "7318656296",
+      "workNo": "8373861031",
+      "birthdate": "1999-08-31",
+      "company": "NA",
+      "jobTitle": "NA",
+      "notes": "hehe",
+      "id": 8
+    },
+    {
+      "firstname": "Abhilash",
+      "lastname": "Saha",
+      "email": "abhilashsaha1@gmail.com",
+      "homeNo": "8373861031",
+      "workNo": "7318656296",
+      "birthdate": "1999-03-07",
+      "company": "NIIT",
+      "jobTitle": "Student",
+      "notes": "hey",
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

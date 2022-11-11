@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact Book App</title>
+</head>
+<body>
+    <header>
+        <h1>My Contacts</h1>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3>Add New Contact</h3>
+                <form id="feedbackForm" action="#" onsubmit="submitContact(event)">
+                    <!-- <form onsubmit="persistSubmittedContact(event)"> -->
+                    <h3>Fill up Contact's Details here</h3>
+                    <div id="validationSummary" class="mt-4">
+                        <ul>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="form-control form-control-sm" name="firstname" id="firstname"
+                                placeholder="Enter Firstname">
+                            <small id="firstNameError"></small>
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control form-control-sm" name="lastname" id="lastname"
+                                placeholder="Enter Lastname">
+                            <small id="lastNameError"></small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input class="form-control form-control-sm" name="email" id="email"
+                                placeholder="Enter Email">
+                            <small id="emailError"></small>
+                        </div>
+                    </div>
+                    <div id="contactNos" class="row">
+                        <div class="col-md-6">
+                            <input class="form-control form-control-sm" name="homeNo" id="homeNo"
+                                placeholder="Enter Contact No - Home">
+                            <small id="homeNoError"></small>
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control form-control-sm" name="workNo" id="workNo"
+                                placeholder="Enter Contact No - Work">
+                            <small id="workNoError"></small>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="addContactNo">+</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="birthday">Enter Birthdate</label>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="date" class="form-control form-control-sm" name="birthdate" id="birthdate"
+                                placeholder="Enter Birthdate">
+                            <small id="birthdateError"></small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="form-control form-control-sm" name="company" id="company"
+                                placeholder="Enter Company">
+                            <small id="companyError"></small>
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control form-control-sm" name="jobTitle" id="jobTitle"
+                                placeholder="Enter Job Title">
+                            <small id="jobTitleError"></small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <textarea class="form-control form-control-sm" rows="4" name="notes" id="notes"
+                                placeholder="Enter Notes"></textarea>
+                            <small id="notesError"></small>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-6">
+                <div id="contact-list">
+                    <h3>My Contacts</h3>
+                    <table class="table table-striped table-hover table-success mt-5 p-5">
+                        <thead>
+                            <tr>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">ContactNo</th>
+                                <th scope="col"> </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableData">
+                            
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Modal -->
+        <div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contact Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="contact-data"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/contact_service.js"></script>
+    
+</body>
+</html>
